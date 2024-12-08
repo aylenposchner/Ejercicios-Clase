@@ -25,7 +25,7 @@ def ejercicio1(request):
     nombre = "Aylen"
     apellido = "Poschner"
     datos1 = {
-        "nombre":nombre
-        "apellido":apellido 
+        "nombre":nombre,
+        "apellido": apellido 
     }
     return render(request, "core/ejercicio1.html", context=datos1)
