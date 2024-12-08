@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludar/', views.saludar),
     path('', views.index),
+    path('dados', views.tirar_dado)
 ]
