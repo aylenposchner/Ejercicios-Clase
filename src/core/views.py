@@ -20,3 +20,12 @@ def tirar_dado(request):
     
     datos = {"title": "Tiro de datos", "mensaje": mensaje, "fecha": datetime.now}
     return render(request, "core/dados.html", context=datos)
+
+def ejercicio1(request):
+    nombre = "Aylen"
+    apellido = "Poschner"
+    datos1 = {
+        "nombre":nombre
+        "apellido":apellido 
+    }
+    return render(request, "core/ejercicio1.html", context=datos1)

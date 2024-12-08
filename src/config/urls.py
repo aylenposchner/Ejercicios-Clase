@@ -23,4 +23,5 @@ urlpatterns = [
     path('saludar/', views.saludar),
     path('', views.index),
     path('dados', views.tirar_dado)
+    path('ej1', views.ejercicio1)
 ]
