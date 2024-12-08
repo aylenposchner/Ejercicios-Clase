@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
-from clientes.views import ver_clientes
+from clientes.views import index, cliente_list, pais_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +27,7 @@ urlpatterns = [
     path('ej1', views.ejercicio1),
     path('notas', views.ver_notas),
     path('usuarios', views.ejercicio2),
-    path('clientes', ver_clientes),
+    path('cliente', index),
+    path('cliente/pais/', pais_list),
+    path('cliente/cliente/', cliente_list),
 ]

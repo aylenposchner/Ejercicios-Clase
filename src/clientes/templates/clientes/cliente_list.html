@@ -6,10 +6,12 @@
     <title>clientes</title>
 </head>
 <body>
-    <h1>Clientes</h1>
+    <h1>Lista Clientes</h1>
+    {% for cliente in clientes %}
+        <p>{{cliente}}</p>
+    {% endfor %}
+    <br/>
     <ul>
-        <li><a href="cliente/pais">Listar Paises</a></li>
-        <li><a href="cliente/cliente">Listar Clientes</a></li>
         <li><a href="/">Volver</a></li>
     </ul>
     
