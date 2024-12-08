@@ -25,4 +25,5 @@ urlpatterns = [
     path('dados', views.tirar_dado),
     path('ej1', views.ejercicio1),
     path('notas', views.ver_notas),
+    path('usuarios', views.ejercicio2),
 ]

@@ -33,3 +33,9 @@ def ejercicio1(request):
 def ver_notas(request):
     lista_notas = [10,8,2,5,4]
     return render(request,"core/notas.html",{"notas":lista_notas})
+
+def ejercicio2(request):
+    usuarios = [{'nombre': 'juan', 'email': 'juan@django'},
+        {'nombre': 'santi', 'email': 'santi@django'},
+        {'nombre': 'agustín', 'email': 'agus@django'}]
+    return render(request,"core/ejercicio2.html",{"usuarios":usuarios})
