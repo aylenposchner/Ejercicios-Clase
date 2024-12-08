@@ -29,3 +29,7 @@ def ejercicio1(request):
         "apellido": apellido 
     }
     return render(request, "core/ejercicio1.html", context=datos1)
+
+def ver_notas(request):
+    lista_notas = [10,8,2,5,4]
+    return render(request,"core/notas.html",{"notas":lista_notas})
