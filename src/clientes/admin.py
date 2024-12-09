@@ -15,5 +15,5 @@ class ClienteAdmin(admin.ModelAdmin):
     list_display = ("nombre","apellido","nacimiento","pais_origen")
     search_fields = ("nombre","apellido")
     ordering = ("nombre","apellido")
-    list_filter = ("pais_origen",)
+    list_filter = ("pais_origen")
     date_hierarchy = "nacimiento"
